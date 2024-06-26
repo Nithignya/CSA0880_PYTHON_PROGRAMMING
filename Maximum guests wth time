@@ -1,0 +1,14 @@
+def cruise(T, guest):
+    max_g = 0
+    cur_g = 0
+    for i in range(T):
+        cur_g += guest[i]
+        max_g = max(max_g, cur_g)
+        if cur_g > 0:
+            cur_g = 0
+    return max_g
+
+T = 5
+guest = [1, 2, 1, 3, 4]
+result = cruise(T, guest)
+print(result)
