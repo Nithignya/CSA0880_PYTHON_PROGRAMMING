@@ -1,0 +1,7 @@
+def valid(s):
+    try:
+        float(s)
+        return True
+    except ValueError:
+        return False
+print(valid("0"))
