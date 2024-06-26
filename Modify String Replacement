@@ -1,0 +1,9 @@
+def modify(S):
+    result=""
+    for char in S:
+        newch=chr(ord(char)+S.count(char))
+        result+=newch
+    return result
+S="lion"
+output=modify(S)
+print(output)
