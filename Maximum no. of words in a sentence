@@ -1,0 +1,9 @@
+def maxw(s):
+    maxw=0
+    for sentence in s:
+        c=len(sentence.split())
+        if c>maxw:
+            maxw=c
+    return maxw
+s=["I like program","Stock market"]
+print(f"max no. of words:{maxw(s)}")
